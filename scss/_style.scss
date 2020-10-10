@@ -1,0 +1,32 @@
+.heading {
+    padding: 2% 0;
+}
+// Leaderboard
+.lboard {
+    background: rgba(184, 200, 218, 0.2);
+    &_heading {
+        color: rgba(0, 0, 0, 0.5);
+    }
+    &_item {
+        background: rgba(184, 200, 218, 0.5);
+        border-radius: 10px;
+        transform: scale(1);
+        transition: transform 0.5s;
+        &:hover {
+            transform: scale(1.02);
+        }
+        & .position {
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        & .pos1 {
+            background: #F6AF37;
+        }
+        & .pos2 {
+            background: #BEBBBB;
+        }
+        & .pos3 {
+            background: #B2967A;
+        }
+    }
+}

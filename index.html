@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link -->
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/logo.png"> <!--Favicon -->
+    <!-- Title -->
+    <title>Hng leaderboard</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="heading d-flex align-items-center mb-4">
+            <img src="img/logo.png" alt="hng_logo" height="40px" width="29px" class="mr-2">
+            <span class="heading_text font-style-normal">
+                <h2 class="m-0" style="font-size: 24px;">HNG Internship</h2>
+                <p class="font-weight-bold m-0">Changing the world one intern at a time</p>
+            </span>
+        </header>
+        
+        <!-- Leaderboard -->
+        <section class="lboard p-4" id="test-list">
+            <div class="lboard_heading text-center mb-5">
+                <h2>Leaderboard</h2>
+            </div>
+            <div class="lboard_search">
+                <input type="text" id="inputEmail" class="form-control mb-2 ip-3 fuzzy-search" placeholder="Search..." required autofocus>
+            </div>
+            <div class="lboard_title row text-center mb-4 p-2 border-bottom font-weight-bold">
+                <span class="col-2">Position</span>
+                <span class="col-4">Names</span>
+                <span class="col-2">Slack username</span>
+                <span class="col-2">Points</span>
+                <span class="col-2">Share</span>
+            </div>
+            <ul class="lboard_list list p-0" id="users">
+                <li class="lboard_item row text-center align-items-center mb-4">
+                    <p class="col-2 position pos1 m-0  py-4">1.</p>
+                    <div class="col-4 name d-flex align-items-center">
+                        <img src="img/Ellipse%201.png" alt="picture" height="50px" width="50px">
+                        <p class="user-name m-0 ml-3">Joseph Tanguey</p>
+                    </div>
+                    <p class="col-2 slack-username m-0">&#64;Joseph</p>
+                    <p class="col-2 point m-0">27</p>
+                    <div class="col-2 share">
+                        <a href="#"><img src="img/Vector.png" alt=""></a>
+                    </div>
+                </li>
+                <li class="lboard_item row text-center align-items-center mb-4">
+                    <p class="col-2 position pos2 m-0 py-4">2.</p>
+                    <div class="col-4 name d-flex align-items-center">
+                        <img src="img/Ellipse%202.png" alt="picture" height="50px" width="50px">
+                        <p class="user-name m-0 ml-3">Mellissa Trisha</p>
+                    </div>
+                    <p class="col-2 slack-username m-0">&#64;Mellissa</p>
+                    <p class="col-2 point m-0">25</p>
+                    <div class="col-2 share">
+                        <a href="#"><img src="img/Vector.png" alt=""></a>
+                    </div>
+                </li>
+                <li class="lboard_item row text-center align-items-center mb-4">
+                    <p class="col-2 position pos3 m-0 py-4">3.</p>
+                    <div class="col-4 name d-flex align-items-center">
+                        <img src="img/Ellipse%203.png" alt="picture" height="50px" width="50px">
+                        <p class="user-name m-0 ml-3">Sandra Justin</p>
+                    </div>
+                    <p class="col-2 slack-username m-0">&#64;Sandra</p>
+                    <p class="col-2 point m-0">22</p>
+                    <div class="col-2 share">
+                        <a href="#"><img src="img/Vector.png" alt=""></a>
+                    </div>
+                </li>
+                <li class="lboard_item row text-center align-items-center mb-4">
+                    <p class="col-2 position m-0 py-4">4.</p>
+                    <div class="col-4 name d-flex align-items-center">
+                        <img src="img/Ellipse%204.png" alt="picture" height="50px" width="50px">
+                        <p class="user-name m-0 ml-3">Esther Amber</p>
+                    </div>
+                    <p class="col-2 slack-username m-0">&#64;Esther</p>
+                    <p class="col-2 point m-0">19</p>
+                    <div class="col-2 share">
+                        <a href="#"><img src="img/Vector.png" alt=""></a>
+                    </div>
+                </li>
+                <li class="lboard_item row text-center align-items-center mb-4">
+                    <p class="col-2 position m-0 py-4">5.</p>
+                    <div class="col-4 name d-flex align-items-center">
+                        <img src="img/Ellipse%205.png" alt="picture" height="50px" width="50px">
+                        <p class="user-name m-0 ml-3">Aremu David</p>
+                    </div>
+                    <p class="col-2 slack-username m-0">&#64;Khingdave</p>
+                    <p class="col-2 point m-0">15</p>
+                    <div class="col-2 share">
+                        <a href="#"><img src="img/Vector.png" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="pt-5 pb-2 text-center">
+            <p>Made by: <a href="https://www.linkedin.com/in/aremu-david-64a63a193/">Khingdave</a></p>
+        </footer>
+    </div>
+    
+
+<!-- Fuzzy Search -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+<script>
+    var monkeyList = new List('test-list', { 
+        valueNames: ['user-name', 'slack-username']
+    });
+</script>
+
+</body>
+</html>
